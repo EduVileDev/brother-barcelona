@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  overflow-y: scroll;
+}
+.scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background-color: orange;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.fabContainer {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1050;
+}
+.fabButton{
+  background-color: #E6511B;
+  padding: 10px 15px;
+  border-radius: 10px 0px 0px 0px;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+.fabOptions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2px;
+}
+.optionsWsp{
+  background-color: #0D753B;
+  padding: 10px 15px;
+  color: white;
+  font-weight: 600;
+  width: 200px;
+  font-size: 13px;
+}
+.optionsForm{
+  background-color: #E6511B;
+  padding: 10px 15px;
+  color: white;
+  font-weight: 600;
+  width: 200px;
+  font-size: 13px;
+}
+
