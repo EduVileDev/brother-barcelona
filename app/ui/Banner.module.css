@@ -1,0 +1,43 @@
+.transitionTextContainer {
+    overflow: hidden;
+    width: 100%;
+    background-color: #000;
+    z-index: 9;
+  }
+  
+  .transitionTrack {
+    display: flex;
+    width: max-content;
+    height: 7vh;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .transitionInnerBox {
+    display: flex;
+  }
+  
+  .transitionText {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    white-space: nowrap;
+  }
+  .textBanner{
+    color: #E1DF3C;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Work Sans';
+    margin: 0px;
+  }
+  
+  /* Animación horizontal */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  

@@ -1,5 +1,5 @@
 .header {
-  background-color: black;
+  background-color: #000000;
   transition: background-color 0.3s ease;
 }
 
@@ -35,5 +35,136 @@
 }
 
 .headerScrolled {
-  background-color: orange !important;
+  background-color: #FD1E57 !important;
+}
+
+.isoIcon {
+  /* filter: brightness(0) !important; */
+  transition: filter 0.3s ease;
+  transform: rotate(90deg);
+}
+
+/* Blanco al hacer scroll */
+.imageLogo {
+  filter: brightness(0) invert(1) !important;
+  transition: filter 0.3s ease;
+}
+
+.headerNavLinkScrolled {
+  color: white !important;
+}
+.ajuste{
+  justify-content: flex-end !important;
+}
+.boxSocial{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 16%;
+  margin-left: 15px;
+}
+@media (width < 990px) {
+  .header {
+    background-color: #E9E6E1;
+  }
+  .headerNav {
+    background-color: #E9E6E1;
+  }
+  .headerContainer{
+    margin: 0px;
+    width: 100% !important;
+  }
+  .isoIcon{
+    filter: invert(1);
+  }
+
+  .wspHeader{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+  }    
+  .wspHeader img{
+      width: 25px;
+      filter: invert(1);
+  }
+  .wspHeader span{
+      font-size: 14px;
+      font-family: 'Work Sans', sans-serif;
+  }
+  .canvasHeader{
+    justify-content: flex-end;
+    background-color: #E9E6E1;
+  }
+  .imageLogo{
+    filter: none !important;
+  }
+  .canvasHeader{
+    padding: 0px;
+  }
+  .headerNavLink{
+    border-top-style: dashed;
+    border-color: #707070;
+    border-width: 1px;
+    border-spacing: 5px;
+    margin: 0px;
+    padding: 10px 20px;
+    color: #000 !important;
+    font-family: Larken;
+    font-weight: 600;
+    font-size: 28px !important;
+    text-align: center;
+  }
+  .headerOffcanvas{
+    background-color: #E9E6E1;
+    justify-content: space-between;
+  }
+  .textOffcanvasMobile{
+    border-top-style: dashed;
+    border-color: #707070;
+    border-width: 1px;
+    border-spacing: 5px;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .textOffcanvasMobile h5 {
+    color: #000;
+    font-family: Larken;
+    font-weight: 600;
+    font-size: 28px;
+}
+  .textoffcanvasmobile span{
+      font-family: 'Work Sans';
+      font-size: 10px;
+      font-weight: 500;
+  }
+  .footerOffcanvasMobil{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #000;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-around;
+  }
+  .footerOffcanvasMobil p {
+    margin: 0;
+    font-family: Larken;
+    font-weight: 100;
+    font-size: 32px;
+    color: #E9E6E1;
+}
+.boxWspHeader{
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end !important;
+  column-gap: 15px;
+}
+.boxSocial{
+  width: 100%;
+  align-items: center;
+  column-gap: 10px;
+  margin: 0px;
+}
 }

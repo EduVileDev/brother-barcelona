@@ -1,0 +1,27 @@
+.input,
+.select {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #707070;
+  opacity: 0.5;
+  line-height: 40px;
+  outline: none;
+}
+
+.input:focus {
+  border-bottom: 1px solid #ff1f57;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.input::placeholder {
+  line-height: 20px;
+}
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input[type='number'] {
+    -moz-appearance: textfield;
+  }

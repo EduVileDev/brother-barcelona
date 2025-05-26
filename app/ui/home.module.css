@@ -53,15 +53,21 @@
   padding: 10px 15px;
   color: white;
   font-weight: 600;
-  width: 200px;
+  width: 230px;
   font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
 }
 .optionsForm{
   background-color: #E6511B;
   padding: 10px 15px;
   color: white;
   font-weight: 600;
-  width: 200px;
+  width: 230px;
   font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
 }
 

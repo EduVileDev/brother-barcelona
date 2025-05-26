@@ -1,0 +1,404 @@
+.heroContainer{
+    height: 100vh;
+    margin-top: 55px;
+    display: flex;
+    background-color: #000000;
+}
+.InnerContainer{
+    margin:0 auto;
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin:auto;
+    justify-content: center;
+    flex-direction: column;
+}
+.containerHr{
+    display: flex;
+    row-gap: 120px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.bordesHr{
+    margin: 0;
+    width: 100%;
+    opacity: 1;
+}
+
+.containerImagesAbsolute{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    column-gap: 160px;
+}
+.boxImagesAbsolute{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    column-gap: 10px;
+}
+.boxImagesAbsoluteDiferent{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    column-gap: 10px;
+}
+.brotherLogo{
+    filter: brightness(0) saturate(100%) invert(98%) sepia(43%) saturate(590%) hue-rotate(34deg) brightness(124%) contrast(82%);
+}
+.textContainer{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-family: 'Work Sans';
+    font-weight: 700;
+    margin: 0px;
+    color: white;
+}
+.titleHero{
+    line-height: 100px;
+    font-size: 120px;
+    -webkit-text-stroke: 1px black; 
+    color: transparent;
+    font-family: Larken;
+    margin: 0px 40px 0px 20px;
+    color: white;
+}
+.subtitleHero{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-family: 'Work Sans';
+    font-weight: 700;
+    margin: 0px;
+    color: white;
+}
+.subtitleHero::before{
+    content: url("../../public/hex-blue.svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    transform: scale(.8);
+    align-items: center;
+}
+.asterisk{
+    position: absolute;
+    top: -32px;
+    left: 140px;
+    animation: rotate 5s linear infinite;
+}
+.smallAsterisk {
+    position: absolute;
+    right: 846px;
+    top: 96px;
+    width: 50px;
+    animation: rotate 5s linear infinite;
+}
+.ellipse {
+    position: absolute;
+    bottom: -150px;
+    left: 204px;
+}
+.trap{
+    position: absolute;
+    bottom: -70px;
+    right: 834px;
+    animation: semiRotate 5s linear infinite;
+}
+.static-hex{
+    position: absolute;
+    top: 140px;
+    left: 260px;
+    animation: semiRotate 5s linear infinite;
+}
+.hex {
+    position: absolute;
+    top: 140px;
+    left: 260px;
+    animation: semiRotate 5s linear infinite;
+}
+.dots {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 298px;
+}
+.arrowScroll {
+    position: absolute;
+    left: 37%;
+    right: 0;
+    bottom: -150px;
+    animation: animate-bottom 1s ease-out infinite;
+}
+.boxCoursesHero{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.boxCoursesHeroSwiper{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.boxDropdownRigth {
+    width: 100%;
+    position: relative;
+    transition: all 250ms ease;
+    z-index: 1;
+    padding: 20px 20px 20px 25px;
+    color: white;
+    overflow: hidden;
+}
+.boxDropdownRigth h5{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.boxDropdownRigth p{
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+.boxDropdownRigth h5,
+.boxDropdownRigth p {
+    color: white;
+    transition: color 250ms ease;
+}
+
+.boxDropdownRigth::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: #E9E6E1;
+    z-index: -1;
+    transition: width 250ms ease;
+}
+
+.boxDropdownRigth:hover::before {
+    width: 100%;
+}
+
+.boxDropdownRigth:hover h5,
+.boxDropdownRigth:hover p {
+    color: black;
+}
+
+.boxTransitioContainer {
+    position: absolute;
+    width: 310px;
+    overflow: hidden;
+    bottom: -50px;
+}
+
+.textTransitionBox{
+    display: flex;
+    list-style: none;
+    animation: scrolling 5s linear infinite;
+}
+.textTransition{
+    font-size: 20px;
+    font-family: 'Work Sans';
+    font-weight: 700;
+    color: #707070;
+    margin: 0px 20px;
+    flex-shrink: 0;
+}
+.staticHexBlock {
+    position: absolute;
+    top: -180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.staticHexBlock p{
+    position: absolute;
+    margin: 0;
+    font-family: 'Work Sans';
+    font-weight: 700;
+    font-size: 20px;
+    color: #e6511b;
+}
+.staticHex{
+    transform: rotate(12deg);
+    position: relative;
+    filter: brightness(0) saturate(100%) invert(40%) sepia(68%) saturate(3988%) hue-rotate(355deg) brightness(96%) contrast(88%);
+}
+.boxHex{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+.simpleArrow{
+    position: absolute;
+    right: 25%;
+    top: -3%;
+    width: 40px;
+    transform: rotate(220deg);
+}
+
+
+@keyframes scrolling {
+    0% { transform: translateX(0) }
+    100% { transform: translateX(-100%) }
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes semiRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-25deg);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+@keyframes animate-bottom  {
+    0% {
+        transform: translateY(0%);
+      }
+    50% {
+        transform: translateY(60%);
+      }
+    100% {
+        transform: translateY(0%);
+      }
+  }
+
+
+  /* Móviles */
+@media (width < 990px) {
+    .containerImagesAbsolute{
+        flex-direction: column !important;
+    }
+    .brotherLogo{
+        width: 230px;
+    }
+    .minusLogo{
+        width: 30px;
+    }
+    .titleHero{
+        font-size: 60px;
+        margin-right: 10px;
+    }
+    .arrowTopRight{
+        width: 45px;
+    }
+    .asterisk {
+        top: 75px;
+        left: 20px;
+        width: 40px;
+    }
+    .hex{
+        display: none;
+    }
+    .trap{
+        display: none;
+    }
+    .simpleArrow{
+        display: none;
+    }
+    .dots{
+        top: -170px;
+        transform: rotate(90deg);
+        width: 100%;
+    }
+    .staticHexBlock{
+        width: 148px;
+        z-index: 2;
+        top: -93px;
+        left: -19px;
+    }
+    .boxCoursesHero{
+        height: 75vh;
+        justify-content: center;
+        row-gap: 40px;
+    }
+    .boxCoursesHeroSwiper{
+        height: 25vh;
+    }
+    .boxTransitioContainer{
+        display: none;
+    }
+    .boxImagesAbsoluteDiferent{
+        height: 40px;
+    }
+    .subtitleHero{
+        font-size: 16px;
+    }
+    .staticHexBlock p{
+        font-size: 16px;
+    }
+    .smallAsterisk{
+        width: 130px;
+        right: 0px;
+        top: -16px;
+        animation: none;
+    }
+    .arrowScroll{
+        top: 55%;
+        bottom: 0;
+        left: 47%;
+    }
+    .ellipse{
+        bottom: 0px;
+        top: 60%;
+        width: 30px;
+    }
+    .containerHr{
+        display: flex;
+        row-gap: 41px;
+        position: absolute;
+        top: -26%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+    }
+  }
+  
+  /* Tablets verticales */
+  @media (480px <=width < 768px) {
+    /* estilos para tablets */
+  }
+  
+  /* Tablets horizontales y laptops pequeños */
+  @media (width >=768px) and (width < 1024px) {
+    /* estilos para pantallas medianas */
+  }
+  
+  /* Escritorios grandes */
+  @media (width >=1024px) {
+    /* estilos para desktop */
+  }

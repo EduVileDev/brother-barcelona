@@ -2,6 +2,10 @@
 
 import React from 'react'
 import styles from '@/app/ui/home.module.css'
+import 'swiper/css';
+import 'swiper/css/grid';
+import 'swiper/css/pagination';
+
 import Hero from './sections/Hero'
 import CoursesAndWorkshops from './sections/CoursesAndWorkshops'
 import FreshNews from './sections/FreshNews'
@@ -12,7 +16,7 @@ import PopupFloating from './components/PopupFloating'
 function Home() {
   const scrolled = useScrolled(50);
   return (
-    <main className="container">
+    <main>
       <Hero />
       <CoursesAndWorkshops />
       <FreshNews />

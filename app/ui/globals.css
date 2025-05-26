@@ -2,3 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Larken;
+  src: url("../ui/LarkenSerifTrial/LarkenDEMO-ExtraBold.otf") format("opentype");
+}
+.swiper{
+  width: 100% !important;
+  height: 100% !important;
+}
+.swiper-vertical > .swiper-wrapper {
+  flex-direction: row !important;
+  margin-top: 40px;
+}
+.swiper-button-prev{
+  transform: rotate(180deg);
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 10px 13px;
+  background-color: transparent !important;
+  width: 50px !important;
+  height: 50px !important;
+  position: relative !important;
+}
+.swiper-button-next{
+  background-color: transparent !important;
+  border-radius: 50%;
+  transition: all 0.5s ease ;
+  border: 1px solid black;
+  padding: 10px 13px;
+  width: 50px !important;
+  height: 50px !important;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  border-radius: 0%;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  transition: all 0.5s ease;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.btn-close{
+  margin-left: 0px !important;
+}
+.navbar-expand-lg .offcanvas{
+  width: 100% !important;
+}
+.navbar-expand-lg .offcanvas .offcanvas-body{
+  justify-content: flex-end !important;
+}
